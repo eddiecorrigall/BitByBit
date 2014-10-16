@@ -81,8 +81,8 @@ def transfer(source_path, destination_path):
 ##### RUN PROGRAM
 ##### ##### ##### ##### ##### 
 
-source_path			= sys.argv[1]
-destination_path	= sys.argv[2]
+source_path		= sys.argv[1] # Source file
+destination_path	= sys.argv[2] # Destination directory
 
 try:
 	transfer(source_path, destination_path)
