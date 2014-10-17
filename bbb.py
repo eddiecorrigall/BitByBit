@@ -56,11 +56,11 @@ def transfer(source_path, destination_path):
 	source_digest = checksum(source_path, hashlib.sha256())
 
 	# Build distination file path
-	destination_path = os.path.join(destination_path, os.path.basename(source_path))
+	destination_file_path = os.path.join(destination_path, os.path.basename(source_path))
 
 	# Check if file has already transfered...
-	if (os.path.isfile(destination_path) == True):
-		if (source_digest == checksum(destination_path, hashlib.sha256())):
+	if (os.path.isfile(destination_file_path) == True):
+		if (source_digest == checksum(destination_file_path, hashlib.sha256())):
 			print("Success, file already transfered!")
 			return
 		else:
