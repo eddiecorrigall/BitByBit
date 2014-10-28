@@ -14,4 +14,4 @@ A python file transfer utility with file integrity checking.
 * Select source and destination
 * Button: Copy checksum to clipboard
 * Checkbox: Save checksum to destination
-* Multi-transfer supper
+* Multi-transfer support
